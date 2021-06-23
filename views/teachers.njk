@@ -1,0 +1,39 @@
+{% extends "layout.njk" %}
+
+{% block styles %}
+<link rel="stylesheet" href="/css/components/card.css">
+{% endblock styles %}
+
+{% block content %}
+<div class="card">
+    <section class="card__image"></section>
+    <section class="card__details">
+        <div class="item card__nome">
+            <h2 class="nome">Nome completo:</h2>
+            <span>Albert Einstein</span>
+        </div>
+        <div class="item card__idade">
+            <h2 class="nome">idade:</h2>
+            <span>62 anos</span>
+        </div>
+        <div class="item card__escolaridade">
+            <h2 class="nome">Escolaridade:</h2>
+            <span>phd em fisica</span>
+        </div>
+        <div class="item card__tipo-aula">
+            <h2 class="nome">tipo de aula:</h2>
+            <span>Presencial</span>
+        </div>
+        <div class="item card__acompanhamento">
+            <h2 class="nome">Acompanhamento:</h2>
+            <span>Matemática</span>
+            <span>Fisíca</span>
+        </div>
+        <div class="item card__data-cadastro">
+            <h2 class="nome">cadastro:</h2>
+            <span>16/06/2021</span>
+        </div>
+        
+    </section>
+</div>
+{% endblock content %}

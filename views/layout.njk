@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/css/reset.css">
     {# STYLES COMPONENTS #}
     <link rel="stylesheet" href="/css/components/header.css">
+    {% block styles %}{% endblock styles %}
 </head>
 <body>
     <header class="header">
@@ -21,5 +22,7 @@
             <a href="#" class="menu__link">Students</a>
         </nav>
     </header>
+
+    {% block content %}{% endblock content %}
 </body>
 </html>

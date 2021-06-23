@@ -1,0 +1,47 @@
+
+.card {
+    width: 800px;
+    height: 500px;
+    background-color: white;
+    margin: 50px auto;
+    color: black;
+
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+}
+.card__image {
+    background: url("https://source.unsplash.com/collection/10085420/500x500") center center no-repeat;
+}
+
+.card__details {
+    padding: 24px 38px;
+    text-transform: capitalize;
+}
+
+.card__details .item {
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+    letter-spacing: 0.7;
+    text-transform: capitalize;
+}
+
+.card__details .item:last-child {
+    border: none;
+}
+
+.item h2 {
+    color: gray;
+    font-size: 20px;
+}
+
+.card__acompanhamento span{
+    padding: 8px 16px;
+    background-color: yellow;
+    display: inline-block;
+    border-radius: 16px;
+    margin-top: 8px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
