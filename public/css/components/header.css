@@ -1,0 +1,52 @@
+:root {
+    --primary-color: rgb(159, 86, 226);
+    --hover-color: rgb(174, 116, 226);
+}
+
+
+.header {
+    padding: 30px;
+    border-bottom: 1px solid rgb(128 128 128 / 11%);
+}
+
+.menu {
+    text-align: center;
+}
+
+.menu__link {
+    width: 100%;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+.menu__active {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.menu a + a{
+    margin-left: 10px;
+}
+
+.menu__link:hover {
+    color: var(--hover-color);
+}
+
+.menu__link::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: var(--hover-color);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 200ms ease-in-out;
+}
+
+.menu__link:hover::after {
+    width: 100%;
+    transition: width 200ms ease-in-out;
+}
+
