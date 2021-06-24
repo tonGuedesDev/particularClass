@@ -1,0 +1,55 @@
+{% extends "layout.njk" %}
+
+{% block styles %}
+<link rel="stylesheet" href="/css/components/form-teachers.css">
+{% endblock styles %}
+
+{% block content %}
+<form class="card" method="POST" action="/teachers/create">
+    <section class="card__image"></section>
+    <section class="card__details">
+        <h1>Professor</h1>
+        <div class="item card__idade">
+            <h2 class="nome">imagem:</h2>
+            <input type="url" name="avatar_url" placeholder="https://www.exemplo.com" maxlength="100" required>
+        </div>
+        <div class="item card__nome">
+            <h2 class="nome">Nome completo:</h2>
+            <input type="text" name="name" placeholder="Digite seu nome completo" maxlength="50" required>
+        </div>
+        <div class="item card__nome">
+            <h2 class="nome">Data de nascimento:</h2>
+            <input type="date" name="date" required>
+        </div>
+        <div class="item card__escolaridade">
+            <h2 class="nome">escolaridade:</h2>
+            <select name="escolaridade">
+                <option value="medio">Ensino Médio Completo</option>
+                <option value="superior" selected>Ensino Superior Completo</option>
+                <option value="mestrado">Mestrado</option>
+                <option value="doutorado">Doutorado</option>
+            </select>
+        </div>
+        <div class="item card__tipo-aula">
+            <h2 class="nome">Tipo da aula:</h2>
+            <label for="aula" class="nome">Presencial</label>
+            <input type="radio" name="aula" value="presencial" selected>
+            <label for="aula" class="nome">distâncial</label>
+            <input type="radio" name="aula" value="distância">
+        </div>
+        <div class="item card__materia">
+            <h2 class="nome">Matéria:</h2>
+            <input type="text" name="materia" placeholder="Digite a materia separado por virgulá" maxlength="100" required>
+        </div>
+        <div class="item card__sexo">
+            <h2 class="nome">sexo:</h2>
+            <label for="sexo" class="nome">Masculino</label>
+            <input type="radio" name="sexo" value="masculino">
+            <label for="sexo" class="nome">Feminino</label>
+            <input type="radio" name="sexo" value="feminino">
+        </div>
+        
+        <button type="submit">Cadastrar</button>
+    </section>
+</form>
+{% endblock content %}

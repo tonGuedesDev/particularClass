@@ -1,0 +1,37 @@
+{
+  "teachers": [
+    {
+      "id": 1,
+      "name": "wellington",
+      "date": 1622764800000,
+      "avatar_url": "http://www.jota@adasd.com",
+      "escolaridade": "superior",
+      "aula": "presencial",
+      "materia": "fisica, matematica, astronomia",
+      "sexo": "masculino",
+      "created_at": 1624564440641
+    },
+    {
+      "id": 2,
+      "name": "wellington",
+      "date": 1622764800000,
+      "avatar_url": "http://www.jota@adasd.com",
+      "escolaridade": "superior",
+      "aula": "presencial",
+      "materia": "fisica, matematica, astronomia",
+      "sexo": "masculino",
+      "created_at": 1624564663584
+    },
+    {
+      "id": 3,
+      "name": "sdafasdf",
+      "date": 1623456000000,
+      "avatar_url": "http://www.jota@adasd.com",
+      "escolaridade": "superior",
+      "aula": "presencial",
+      "materia": "fisica, matematica, astronomia",
+      "sexo": "masculino",
+      "created_at": 1624578696499
+    }
+  ]
+}
